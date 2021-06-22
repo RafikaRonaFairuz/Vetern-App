@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#CDCDCD</color>
+	<color name="colorPrimary">#2D616C</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="ellipse_1_color">#CDCDCD</color>
+	<color name="ellipse_2_color">#2D616C</color>
+</resources>

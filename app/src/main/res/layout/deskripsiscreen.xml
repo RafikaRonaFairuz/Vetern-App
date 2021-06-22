@@ -1,0 +1,235 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deskripsiScreen"
+    android:background="#EFEFEF">
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/button_back"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/rectangle2"
+        android:layout_width="362dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/prof"
+        android:layout_width="99.03dp"
+        android:layout_height="100dp"
+        android:background="@drawable/prof"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="@+id/rectangle2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/fav"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/fav"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="@+id/rectangle2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle2"
+        app:layout_constraintVertical_bias="0.084"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/share"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="@+id/rectangle2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle2"
+        app:layout_constraintVertical_bias="0.084"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Lena Putri"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/prof"
+        app:layout_constraintTop_toTopOf="@+id/rectangle2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/rectangle3"
+        android:layout_width="180dp"
+        android:layout_height="22dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/prof"
+        app:layout_constraintTop_toTopOf="@+id/rectangle2"
+        app:layout_constraintVertical_bias="0.509"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/jur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Sistem Informasi, 2018"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle3"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="@+id/rectangle3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/comp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/comp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="@+id/rectangle2"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle3"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/compp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="PT. ABC \n Bidang - Data Analysis"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle2"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/comp"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle3"
+        app:layout_constraintVertical_bias="0.173"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/g2"
+        android:layout_width="22dp"
+        android:layout_height="114dp"
+        android:background="@drawable/g2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:layout_constraintVertical_bias="0.282"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/gam1"
+        android:layout_width="22dp"
+        android:layout_height="114dp"
+        android:background="@drawable/gam1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g2"
+        app:layout_constraintVertical_bias="0.252"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Kemampuan dan Keterampilan"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:layout_constraintVertical_bias="0.074"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/kem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:lineHeight="50dp"
+        android:text="Database ( My SQL dan Oracel) \nDatawarehousing"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toEndOf="@+id/g2"
+        app:layout_constraintTop_toBottomOf="@+id/ju"
+        app:layout_constraintVertical_bias="0.158"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:lineHeight="38dp"
+        android:text="Kerjasama Tim \nKeakurasian, Detail, dan Teliti \nAnalisa yang baik"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toEndOf="@+id/gam1"
+        app:layout_constraintTop_toBottomOf="@+id/kem"
+        app:layout_constraintVertical_bias="0.37"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="133dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ket"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

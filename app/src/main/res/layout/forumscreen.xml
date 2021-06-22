@@ -1,0 +1,296 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forumScreen"
+    android:background="@drawable/fordis">
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/button_back"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/opening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Tanya Kating"
+        android:textColor="#2D616C"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/rectangle1"
+        android:layout_width="355dp"
+        android:layout_height="210dp"
+        android:background="@drawable/rectangle1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opening"
+        app:layout_constraintVertical_bias="0.124"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppinslightitalic"
+        android:text="Lihat Semua..."
+        android:textAllCaps="false"
+        android:textColor="#2D616C"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle1"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="@+id/rectangle1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle1"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="@+id/rectangle1"
+        app:layout_constraintTop_toBottomOf="@+id/more"
+        app:layout_constraintVertical_bias="0.423"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pil1"
+                android:layout_width="120dp"
+                android:layout_height="133dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pil1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/more"
+                app:layout_constraintVertical_bias="0.571"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/pil2"
+                android:layout_width="120dp"
+                android:layout_height="133dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pil2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toEndOf="@+id/pil1"
+                app:layout_constraintTop_toBottomOf="@+id/more"
+                app:layout_constraintVertical_bias="0.571"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/pil3"
+                android:layout_width="120dp"
+                android:layout_height="133dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pil3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/pil2"
+                app:layout_constraintTop_toBottomOf="@+id/more"
+                app:layout_constraintVertical_bias="0.571"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/pil4"
+                android:layout_width="120dp"
+                android:layout_height="133dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pil1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/more"
+                app:layout_constraintVertical_bias="0.571"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/pil5"
+                android:layout_width="120dp"
+                android:layout_height="133dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pil2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/more"
+                app:layout_constraintVertical_bias="0.571"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/katper"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/katper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/katpek"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+        app:layout_constraintVertical_bias="0.031"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/katpen"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/katpen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/katkem"
+        app:layout_constraintTop_toBottomOf="@+id/katper"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/katpek"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/katpek"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle1"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/katkem"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/katkem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/katpek"
+        app:layout_constraintVertical_bias="0.064"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="71.5dp"
+        android:layout_height="68.72dp"
+        android:background="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/dash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/dash"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/pro"
+        android:layout_width="31.43dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pro"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/dash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/aforum"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:background="@drawable/aforum"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ihom"
+        android:layout_width="37.17dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ihom"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toStartOf="@+id/aforum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

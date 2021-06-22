@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vetern">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".launchScreen1" />
+        <activity android:name=".launchScreen2" />
+        <activity android:name=".launchScreen3" />
+        <activity android:name=".loginScreen" />
+        <activity android:name=".registScreen" />
+        <activity android:name=".homeScreen" />
+        <activity android:name=".forumScreen" />
+        <activity android:name=".deskripsiScreen" />
+        <activity android:name=".profileScreen" />
+        <activity android:name=".dafdosScreen" />
+        <activity android:name=".dashboardScreen" />
+        <activity android:name=".chatScreen" />
+        <activity android:name=".eksplorScreen" />
+        <activity android:name=".settingsScreen"></activity>
+    </application>
+
+</manifest>

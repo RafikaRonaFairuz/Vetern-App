@@ -1,0 +1,383 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".registScreen"
+	android:background="#EFEFEF">
+
+	<ImageButton
+		android:id="@+id/button_back"
+		android:layout_width="20dp"
+		android:layout_height="30dp"
+		android:src="@drawable/button_back"
+		android:background="@android:color/transparent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.082"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.035"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/buat_akun"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinssemibold"
+		android:text="Buat Akun"
+		android:textColor="#2D616C"
+		android:textSize="26sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.115"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.107"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/email1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinssemibold"
+		android:text="EMAIL"
+		android:textColor="#2D616C"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.082"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/buat_akun"
+		app:layout_constraintVertical_bias="0.028"
+		tools:ignore="MissingConstraints" />
+
+	<EditText
+		android:id="@+id/email"
+		android:layout_width="290dp"
+		android:layout_height="50dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/poppinsregular"
+		android:hint="Ketik di sini"
+		android:inputType="textEmailAddress"
+		android:paddingLeft="10dp"
+		android:textColor="#2D616C"
+		android:textColorHint="#CDCDCD"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.256"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/email1"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout"
+		android:layout_width="320dp"
+		android:layout_height="1dp"
+		android:background="#65A896"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.439"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/email"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/nama1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinssemibold"
+		android:text="NAMA LENGKAP"
+		android:textColor="#2D616C"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.097"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/email"
+		app:layout_constraintVertical_bias="0.03"
+		tools:ignore="MissingConstraints"  />
+
+	<EditText
+		android:id="@+id/nama"
+		android:layout_width="290dp"
+		android:layout_height="50dp"
+		android:background="@android:color/transparent"
+		android:hint="Ketik di sini"
+		android:inputType="textPersonName"
+		android:fontFamily="@font/poppinsregular"
+		android:paddingLeft="10dp"
+		android:textColor="#2D616C"
+		android:textColorHint="#CDCDCD"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.256"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/nama1"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout1"
+		android:layout_width="320dp"
+		android:layout_height="1dp"
+		android:background="#65A896"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.439"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/nama"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/no"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinssemibold"
+		android:text="NO TELEPON"
+		android:textColor="#2D616C"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.096"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/nama"
+		app:layout_constraintVertical_bias="0.046"
+		tools:ignore="MissingConstraints"  />
+
+	<TextView
+		android:id="@+id/num"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinsregular"
+		android:text="+62"
+		android:textColor="#000000"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="@+id/no_tlp"
+		app:layout_constraintEnd_toStartOf="@+id/no_tlp"
+		app:layout_constraintHorizontal_bias="0.851"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/no"
+		tools:ignore="MissingConstraints"   />
+
+	<EditText
+		android:id="@+id/no_tlp"
+		android:layout_width="290dp"
+		android:layout_height="50dp"
+		android:background="@android:color/transparent"
+		android:hint="Ketik di sini"
+		android:fontFamily="@font/poppinsregular"
+		android:inputType="textPhonetic"
+		android:paddingLeft="10dp"
+		android:textColor="#2D616C"
+		android:textColorHint="#CDCDCD"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.578"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/no"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout2"
+		android:layout_width="320dp"
+		android:layout_height="1dp"
+		android:background="#65A896"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.439"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/no_tlp"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/kata_sandi"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinssemibold"
+		android:text="KATA SANDI"
+		android:textColor="#2D616C"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.091"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/no_tlp"
+		app:layout_constraintVertical_bias="0.052"
+		tools:ignore="MissingConstraints"   />
+
+	<EditText
+		android:id="@+id/password"
+		android:layout_width="270dp"
+		android:layout_height="50dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/poppinsregular"
+		android:hint="Ketik di sini"
+		android:inputType="textPassword"
+		android:paddingLeft="10dp"
+		android:textColor="#2D616C"
+		android:textColorHint="#CDCDCD"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.256"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/kata_sandi"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<Button
+		android:id="@+id/tampilkan"
+		android:layout_width="55dp"
+		android:layout_height="12dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/poppinsregular"
+		android:text="Tampilkan"
+		android:textColor="#2D616C"
+		android:textSize="10dp"
+		app:layout_constraintBottom_toBottomOf="@+id/password"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toEndOf="@+id/password"
+		app:layout_constraintTop_toBottomOf="@+id/no_tlp"
+		app:layout_constraintVertical_bias="0.733"
+		tools:ignore="MissingConstraints" />
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout3"
+		android:layout_width="320dp"
+		android:layout_height="1dp"
+		android:background="#65A896"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.439"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/password"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<TextView
+		android:id="@+id/konf1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/poppinssemibold"
+		android:text="KONFIRMASI KATA SANDI"
+		android:textColor="#2D616C"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.118"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/password"
+		app:layout_constraintVertical_bias="0.049"
+		tools:ignore="MissingConstraints" />
+
+	<EditText
+		android:id="@+id/konfr1"
+		android:layout_width="270dp"
+		android:layout_height="50dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/poppinsregular"
+		android:hint="Ketik di sini"
+		android:inputType="textPassword"
+		android:paddingLeft="10dp"
+		android:textColor="#2D616C"
+		android:textColorHint="#CDCDCD"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.256"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/konf1"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<Button
+		android:id="@+id/tampilkan1"
+		android:layout_width="55dp"
+		android:layout_height="12dp"
+		android:background="@android:color/transparent"
+		android:fontFamily="@font/poppinsregular"
+		android:text="Tampilkan"
+		android:textColor="#2D616C"
+		android:textSize="10dp"
+		app:layout_constraintBottom_toBottomOf="@+id/konfr1"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toEndOf="@+id/konfr1"
+		app:layout_constraintTop_toBottomOf="@+id/tampilkan"
+		app:layout_constraintVertical_bias="0.772"
+		tools:ignore="MissingConstraints" />
+
+	<RelativeLayout
+		android:id="@+id/relativeLayout4"
+		android:layout_width="320dp"
+		android:layout_height="1dp"
+		android:background="#65A896"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.439"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/konfr1"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints" />
+
+	<Button
+		android:id="@+id/signup"
+		android:layout_width="294dp"
+		android:layout_height="35dp"
+		android:background="@drawable/buat"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+		app:layout_constraintVertical_bias="0.168"
+		tools:ignore="MissingConstraints"/>
+
+	<View
+		android:id="@+id/ataud"
+		android:layout_width="345dp"
+		android:layout_height="26dp"
+		android:background="@drawable/ataud"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/signup"
+		app:layout_constraintVertical_bias="0.208"
+		tools:ignore="MissingConstraints" />
+
+	<Button
+		android:id="@+id/fb"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:background="@drawable/fb_logo"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.158"
+		app:layout_constraintStart_toEndOf="@+id/google"
+		app:layout_constraintTop_toBottomOf="@+id/ataud"
+		app:layout_constraintVertical_bias="0.257"
+		tools:ignore="MissingConstraints" />
+
+	<Button
+		android:id="@+id/google"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:background="@drawable/google_logo"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.398"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/ataud"
+		app:layout_constraintVertical_bias="0.257"
+		tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
