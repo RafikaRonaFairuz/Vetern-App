@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".splashScreen"
+            android:name="com.vetern.ui.splashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name">
             <intent-filter>
@@ -20,20 +20,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".launchScreen1" />
-        <activity android:name=".launchScreen2" />
-        <activity android:name=".launchScreen3" />
-        <activity android:name=".loginScreen" />
-        <activity android:name=".registScreen" />
-        <activity android:name=".homeScreen" />
-        <activity android:name=".forumScreen" />
-        <activity android:name=".deskripsiScreen" />
-        <activity android:name=".profileScreen" />
-        <activity android:name=".dafdosScreen" />
-        <activity android:name=".dashboardScreen" />
-        <activity android:name=".chatScreen" />
-        <activity android:name=".eksplorScreen" />
-        <activity android:name=".settingsScreen"></activity>
+        <activity android:name=".ui.launchScreen1" />
+        <activity android:name=".ui.launchScreen2" />
+        <activity android:name=".ui.launchScreen3" />
+        <activity android:name=".ui.loginScreen" />
+        <activity android:name=".ui.registScreen" />
+        <activity android:name=".ui.homeScreen" />
+        <activity android:name=".ui.forumScreen" />
+        <activity android:name=".ui.deskripsiScreen" />
+        <activity android:name=".ui.profileScreen" />
+        <activity android:name=".ui.dafdosScreen" />
+        <activity android:name=".ui.dashboardScreen" />
+        <activity android:name=".ui.chatScreen" />
+        <activity android:name=".ui.eksplorScreen" />
+        <activity android:name=".ui.settingsScreen"></activity>
     </application>
 
 </manifest>
