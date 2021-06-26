@@ -4,7 +4,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/ls1"
-	tools:context=".launchScreen1"
+	tools:context=".ui.launchScreen1"
 	android:theme="@android:style/Theme.NoTitleBar">
 
 	<Button

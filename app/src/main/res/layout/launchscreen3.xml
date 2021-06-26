@@ -4,7 +4,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/ls3"
-	tools:context=".launchScreen3"
+	tools:context=".ui.launchScreen3"
 	android:theme="@android:style/Theme.NoTitleBar">
 
 	<ImageButton
