@@ -6,21 +6,21 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.vetern.R;
-import com.vetern.modal.EmailPasswordActivity;
+import com.vetern.modal.User;
 
 public class loginScreen extends Activity {
 
 	private FirebaseAuth mAuth;
-
 	private Button daftar, login;
-	private EditText TextEmail, TextPassword;
-	private DatabaseReference db_vetern;
-	private String EmailPassowrdActivity;
+	private EditText email1, password1;
+	private FirebaseDatabase mFirebaseDatabase;
+	private DatabaseReference mFirebaseReference;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -29,13 +29,11 @@ public class loginScreen extends Activity {
 		setContentView(R.layout.loginscreen);
 
 		mAuth = FirebaseAuth.getInstance();
-
-		login = (Button) findViewById(R.id.login);
 		daftar = (Button) findViewById(R.id.daftar);
-		TextEmail = findViewById(R.id.email);
-		TextPassword = findViewById(R.id.password);
-		db_vetern = FirebaseDatabase.getInstance().getReference("EmailPasswprdActivity");
-		EmailPassowrdActivity = db_vetern.push().getKey();
+		login = (Button) findViewById(R.id.login);
+
+		mFirebaseDatabase = FirebaseDatabase.getInstance();
+		mFirebaseReference = mFirebaseDatabase.getReference("User");
 
 		daftar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -46,18 +44,23 @@ public class loginScreen extends Activity {
 
 		login.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				simpanData();
 				Intent nextScreen = new Intent(getApplicationContext(), homeScreen.class);
 				startActivity(nextScreen);
 			}
 		});
 	}
 
-	private void simpanData() {
-		EmailPasswordActivity emailpasswordactivity = new EmailPasswordActivity(TextEmail.getText().toString(),
-				TextPassword.getText().toString());
+	public void Click1(View view) {
+		email1 = (EditText) findViewById(R.id.email1);
+		password1 = (EditText) findViewById(R.id.password1);
 
-		db_vetern.child(String.valueOf(TextEmail)).setValue(emailpasswordactivity);
+		String email = email1.getText().toString();
+		String password = password1.getText().toString();
+
+		User user = new User(email, password);
+
+		mFirebaseReference.child(email).setValue(user);
+		Toast.makeText(this, "User ditambahkan", Toast.LENGTH_LONG).show();
 	}
 }
 	

@@ -22,6 +22,10 @@ public class dafdosScreen extends Activity {
         setContentView(R.layout.dafdosscreen);
 
         button_back = (ImageButton) findViewById(R.id.button_back);
+        plus = (ImageButton) findViewById(R.id.plus);
+        pro = (ImageButton) findViewById(R.id.pro);
+        forum = (ImageButton) findViewById(R.id.forum);
+        ihom = (ImageButton) findViewById(R.id.ihom);
 
         button_back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

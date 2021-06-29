@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "650713588573",
-    "project_id": "vetern-809e0",
-    "storage_bucket": "vetern-809e0.appspot.com"
+    "project_number": "496349574910",
+    "project_id": "vetern-542ae",
+    "storage_bucket": "vetern-542ae.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:650713588573:android:d83347baf0e1dd1a4a7eb4",
+        "mobilesdk_app_id": "1:496349574910:android:f7207fe4eda647f90697af",
         "android_client_info": {
           "package_name": "com.vetern"
         }
       },
       "oauth_client": [
         {
-          "client_id": "650713588573-p38oo7t0t3qh86ken0tiusvsdl56du3h.apps.googleusercontent.com",
+          "client_id": "496349574910-8ef24p6v21q8eiujptr7tdbjtdthleg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vetern",
+            "certificate_hash": "8b962a8cee5a3594ca2c49b361e735822dab994e"
+          }
+        },
+        {
+          "client_id": "496349574910-bt4ljtkl7o0imvks704cp43rls384vn6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD9aVYcKY4--1LJHERxK7DDv5FPxHtNI5g"
+          "current_key": "AIzaSyAu6kO4rQ4gdYzODC9rk-aM6n6HaSYz1UQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "650713588573-p38oo7t0t3qh86ken0tiusvsdl56du3h.apps.googleusercontent.com",
+              "client_id": "496349574910-bt4ljtkl7o0imvks704cp43rls384vn6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

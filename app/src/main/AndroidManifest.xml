@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.vetern">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -33,7 +38,7 @@
         <activity android:name=".ui.dashboardScreen" />
         <activity android:name=".ui.chatScreen" />
         <activity android:name=".ui.eksplorScreen" />
-        <activity android:name=".ui.settingsScreen"></activity>
+        <activity android:name=".ui.settingsScreen"/>
     </application>
 
 </manifest>

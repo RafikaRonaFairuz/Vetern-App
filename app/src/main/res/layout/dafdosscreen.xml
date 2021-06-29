@@ -4,86 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#EFEFEF">
+    android:background="#EFEFEF"
     tools:context=".ui.dafdosScreen">
 
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:ignore="MissingConstraints">
 
 
-            <ImageButton
-                android:id="@+id/button_back"
-                android:layout_width="45dp"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:paddingTop="5dp"
-                android:src="@drawable/button_back"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.082"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.035" />
-
-            <TextView
-                android:id="@+id/tv_juduldospem"
-                android:layout_width="330dp"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="4dp"
-                android:fontFamily="@font/poppinsregular"
-                android:gravity="center_horizontal"
-                android:paddingTop="40dp"
-                android:text="Daftar Dosen Pembimbing"
-                android:textColor="#2D616C"
-                android:textSize="22sp" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="#C0D1BF"
-            android:orientation="horizontal"
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingTop="5dp"
+            android:src="@drawable/button_back"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="500dp"
-            tools:ignore="MissingConstraints">
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="209dp"
-                android:layout_height="76dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/bu_nur"
-                android:textColor="#003366" />
+        <TextView
+            android:id="@+id/tv_juduldospem"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:text="Daftar Dosen Pembimbing"
+            android:textColor="#2D616C"
+            android:textSize="22sp" />
 
-            <ImageButton
-                android:background="@android:color/transparent"
-                android:layout_width="100dp"
-                android:layout_height="84dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/btn_konfirmasi" />
+    </LinearLayout>
 
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#C0D1BF"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="209dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bu_tere"
+            android:textColor="#003366" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_konfirmasi" />
+
+    </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="#D2DDCF"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="400dp"
             tools:ignore="MissingConstraints">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -91,29 +95,30 @@
                 android:layout_height="76dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/bu_nur"
+                android:background="@drawable/bu_ika"
                 android:textColor="#003366" />
 
             <ImageButton
-                android:background="@android:color/transparent"
                 android:layout_width="100dp"
                 android:layout_height="84dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="35dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
                 android:src="@drawable/btn_konfirmasi" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="#C0D1BF"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="300dp"
             tools:ignore="MissingConstraints">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -121,7 +126,7 @@
                 android:layout_height="76dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/bu_nur"
+                android:background="@drawable/bu_ruth"
                 android:textColor="#003366" />
 
             <ImageButton
@@ -142,9 +147,9 @@
             android:layout_height="100dp"
             android:background="#D2DDCF"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="200dp"
             tools:ignore="MissingConstraints">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -152,17 +157,17 @@
                 android:layout_height="76dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/bu_nur"
+                android:background="@drawable/bu_helen"
                 android:textColor="#003366" />
 
             <ImageButton
-                android:background="@android:color/transparent"
                 android:layout_width="100dp"
                 android:layout_height="84dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="35dp"
                 android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
                 android:src="@drawable/btn_konfirmasi" />
 
         </LinearLayout>
@@ -197,82 +202,114 @@
 
         </LinearLayout>
 
-        <View
-            android:id="@+id/nav"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/nav"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#C0D1BF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="600dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="209dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bu_tri"
+            android:textColor="#003366" />
 
         <ImageButton
-            android:id="@+id/plus"
-            android:layout_width="71.5dp"
-            android:layout_height="68.72dp"
-            android:background="@drawable/plus"
-            app:layout_constraintBottom_toBottomOf="@+id/nav"
-            app:layout_constraintEnd_toEndOf="@+id/nav"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="@+id/nav"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.98"
-            tools:ignore="MissingConstraints" />v
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_konfirmasi" />
 
-        <ImageButton
-            android:id="@+id/dash"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/dashtrans"
-            app:layout_constraintBottom_toBottomOf="@+id/nav"
-            app:layout_constraintEnd_toEndOf="@+id/nav"
-            app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintStart_toEndOf="@+id/plus"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.982"
-            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/pro"
-            android:layout_width="31.43dp"
-            android:layout_height="40dp"
-            android:background="@drawable/pro"
-            app:layout_constraintBottom_toBottomOf="@+id/nav"
-            app:layout_constraintEnd_toEndOf="@+id/nav"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toEndOf="@+id/dash"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.982"
-            tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
-        <ImageButton
-            android:id="@+id/forum"
-            android:layout_width="42dp"
-            android:layout_height="40dp"
-            android:background="@drawable/forum"
-            app:layout_constraintBottom_toBottomOf="@+id/nav"
-            app:layout_constraintEnd_toStartOf="@+id/plus"
-            app:layout_constraintHorizontal_bias="0.75"
-            app:layout_constraintStart_toStartOf="@+id/nav"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.982"
-            tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="71.5dp"
+        android:layout_height="68.72dp"
+        android:background="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        tools:ignore="MissingConstraints" />
 
-        <ImageButton
-            android:id="@+id/hom"
-            android:layout_width="37.17dp"
-            android:layout_height="40dp"
-            android:background="@drawable/homputih"
-            app:layout_constraintBottom_toBottomOf="@+id/nav"
-            app:layout_constraintEnd_toStartOf="@+id/forum"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/nav"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.982"
-            tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/dash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/dashtrans"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/pro"
+        android:layout_width="31.43dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pro"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="@+id/nav"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/dash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/forum"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:background="@drawable/forum"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/hom"
+        android:layout_width="37.17dp"
+        android:layout_height="40dp"
+        android:background="@drawable/homputih"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toStartOf="@+id/forum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
